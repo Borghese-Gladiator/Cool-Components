@@ -1,15 +1,17 @@
-import * as React from "react"
+import React from 'react';
+import { Link } from "gatsby";
 
 // styles
 const pageStyles = {
   color: "#232129",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  display: "grid",
+  placeItems: "center"
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+  marginBottom: 64
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -35,9 +37,16 @@ const listItemStyles = {
 }
 
 const linkStyle = {
-  color: "#8954A8",
+  color: "#757de8",
   fontWeight: "bold",
-  fontSize: "16px",
+  fontSize: "20px",
+  verticalAlign: "5%",
+}
+
+const secondaryLinkStyle = {
+  color: "#ff7961",
+  fontWeight: "bold",
+  fontSize: "14px",
   verticalAlign: "5%",
 }
 
@@ -48,48 +57,54 @@ const docLinkStyle = {
 }
 
 const descriptionStyle = {
+  marginTop: "8px",
+  marginBottom: "16px",
   color: "#232129",
   fontSize: "14px",
 }
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
+const flexSpaceBetween = {
+  display: "flex",
+  justifyContent: "space-between"
 }
 // data
 const links = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
+    text: "Glass Credit Card",
+    url: "/credit_card/",
+    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "CSS Frosted glass credit card - Created the Frosted blurry glass effect by using a backdrop-filter && a two-step animation transforming the elements to rotate from 0 to 360 degrees (a full circle). It also offsets the translateX axis to make it move.",
     color: "#E95800",
   },
   {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
+    text: "Glass Credit Card",
+    url: "/credit_card/",
+    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
     description:
       "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
     color: "#1099A8",
   },
   {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
+    text: "Glass Credit Card",
+    url: "/credit_card/",
+    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
     description:
       "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
     color: "#BC027F",
   },
   {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
+    text: "Glass Credit Card",
+    url: "/credit_card/",
+    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
     description:
       "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
     color: "#0D96F2",
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Glass Credit Card",
+    url: "/credit_card/",
+    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
     description:
       "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
     color: "#000000",
@@ -102,38 +117,24 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
+        {"Found and Experimented with "}
+        <span style={headingAccentStyles}>Cool Components</span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span>
       </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
         {links.map(link => (
           <li style={{ ...listItemStyles, color: link.color }}>
             <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
+              <div style={flexSpaceBetween}>
+                <Link style={linkStyle} to={`${link.url}`}>
+                  {link.text}
+                </Link>
+                <a style={secondaryLinkStyle} href={`${link.secondaryURL}`}>
+                  see original component
+                </a>
+              </div>
               <p style={descriptionStyle}>{link.description}</p>
             </span>
           </li>
