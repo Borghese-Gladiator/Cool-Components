@@ -63,11 +63,11 @@ const links = [
     color: "#E95800",
   },
   {
-    text: "Glass Credit Card",
-    url: "/credit_card/",
-    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
+    text: "Vanilla JavaScript Particle Smoke",
+    url: "/particle_smoke/",
+    secondaryURL: "https://codepen.io/franksLaboratory/pen/ZEprPKx",
     description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
+      "Particle Smoke animation over an image - Created by editing brightness & color of pixels of an image on a canvas with MANY arc patterns.",
     color: "#1099A8",
   },
   {
