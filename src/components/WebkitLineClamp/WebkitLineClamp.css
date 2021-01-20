@@ -1,0 +1,45 @@
+/* By default, truncate the text abruptly */
+.line-clamp {
+    /* Careful computing the max-height, it needs to match n * line-height */
+    max-height: calc(2 * 1.15 * 1.5rem);
+    overflow: hidden;
+}
+
+/* For capable browsers, truncate with an ellipsis */
+/* To simulate a browser without support, you can add a s after clamp in the following line */
+@supports (-webkit-line-clamp: 2) {
+    .line-clamp {
+        /* Remove the made up max-height */
+        max-height: none;
+        
+        /* Those three properties are mandatory, so is overflow: hidden that we defined earlier */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
+
+
+/* Extra code for the look of the demo */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
+    gap: 1rem;
+    margin: 1rem;
+}
+.demo-card {
+    background-color: #E2E8F0;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.demo-img {
+    align-self: center;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.demo-title {
+    font-size: 1.5rem;
+    margin: 0;
+}

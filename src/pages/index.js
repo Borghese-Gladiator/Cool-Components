@@ -71,11 +71,11 @@ const links = [
     color: "#1099A8",
   },
   {
-    text: "Glass Credit Card",
-    url: "/credit_card/",
+    text: "CSS Property: -webikit-line-clapm",
+    url: "/webkit_line_clamp/",
     secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
     description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
+      "Use -webkit-line-clamp property to limit the number of characters displayed (used to be done with JS, but this blocks rendering).",
     color: "#BC027F",
   },
   {
