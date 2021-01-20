@@ -1,7 +1,10 @@
 # Cool_Components
-HTML + CSS to create effects 
+Experimenting with cool components made by others. Links to their original work are included.
 
-GatsbyJS used to create static site and load each component
+# My Setup
+- used GatsbyJS to create static site and separate each component onto pages
+- modularized CSS styling with CSS Modules as necessary (eg: `import styles from './Thumbnail.css`)
+- corrected CSS kebab-case to React camelCase per component
 
 
 <p align="center">
