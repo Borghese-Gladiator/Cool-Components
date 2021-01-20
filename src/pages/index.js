@@ -73,7 +73,7 @@ const links = [
   {
     text: "CSS Property: -webikit-line-clapm",
     url: "/webkit_line_clamp/",
-    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
+    secondaryURL: "https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/",
     description:
       "Use -webkit-line-clamp property to limit the number of characters displayed (used to be done with JS, but this blocks rendering).",
     color: "#BC027F",
