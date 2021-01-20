@@ -11,10 +11,13 @@ const pageStyles = {
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64
+  marginBottom: 10
 }
 const headingAccentStyles = {
   color: "#663399",
+}
+const secondaryHeadingStyles = {
+  marginBottom: 64
 }
 
 const listStyles = {
@@ -79,9 +82,9 @@ const links = [
     color: "#BC027F",
   },
   {
-    text: "Glass Credit Card",
-    url: "/credit_card/",
-    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
+    text: "Tag Cloud with HTML + CSS",
+    url: "/tag_cloud/",
+    secondaryURL: "https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90",
     description:
       "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
     color: "#0D96F2",
@@ -102,12 +105,12 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        {"Found and Experimented with "}
         <span style={headingAccentStyles}>Cool Components</span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span>
       </h1>
+      <h3 style={secondaryHeadingStyles}>Static site to try out cool components from blog posts I read</h3>
       <ul style={listStyles}>
         {links.map(link => (
           <li style={{ ...listItemStyles, color: link.color }}>
