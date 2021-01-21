@@ -74,7 +74,7 @@ const links = [
     color: "#1099A8",
   },
   {
-    text: "CSS Property: -webikit-line-clapm",
+    text: "CSS Property: -webikit-line-clamp",
     url: "/webkit_line_clamp/",
     secondaryURL: "https://calendar.perfplanet.com/2020/html-and-css-techniques-to-reduce-your-javascript/",
     description:
