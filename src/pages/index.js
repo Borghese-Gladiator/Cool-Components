@@ -90,9 +90,9 @@ const links = [
     color: "#0D96F2",
   },
   {
-    text: "Glass Credit Card",
-    url: "/credit_card/",
-    secondaryURL: "https://dev.to/dailydevtips1/css-frosted-glass-credit-card-3lak",
+    text: "Netflix Intro Animation",
+    url: "/netflix_intro_animation/",
+    secondaryURL: "https://dev.to/claudiobonfati/netflix-intro-animation-pure-css-1m0c",
     description:
       "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
     color: "#000000",
