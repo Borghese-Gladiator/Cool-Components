@@ -94,7 +94,7 @@ const links = [
     url: "/netflix_intro_animation/",
     secondaryURL: "https://dev.to/claudiobonfati/netflix-intro-animation-pure-css-1m0c",
     description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "Displays Netflix Intro Animation - animation created by using HTML + CSS",
     color: "#000000",
   },
 ]
