@@ -86,7 +86,7 @@ const links = [
     url: "/tag_cloud/",
     secondaryURL: "https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90",
     description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
+      "Tag Cloud - each <a> has a data-weight attribute to determine size & CSS uses li:nth-child(n) to determine color",
     color: "#0D96F2",
   },
   {
