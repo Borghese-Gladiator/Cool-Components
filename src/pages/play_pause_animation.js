@@ -13,6 +13,7 @@ const PlayPauseAnimationPage = () => {
             <h4>My Changes</h4>
             <ul>
                 <li>Fixed attributes to camelCase (eg: class)</li>
+                <li>Smoothed animation on bigger screen by changing marginLeft of slide animation</li>
             </ul>
             <br />
             <PlayPauseAnimation />
