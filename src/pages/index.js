@@ -119,7 +119,6 @@ const IndexPage = () => {
         </span>
       </h1>
       <h3 style={secondaryHeadingStyles}>Static site to try out cool components from blog posts I read</h3>
-      <p>also fixed HTML & styling to be able to embed it in React as JSX</p>
       <ul style={listStyles}>
         {links.map(link => (
           <li key={`${link.url}`} style={{ ...listItemStyles, color: link.color }}>
