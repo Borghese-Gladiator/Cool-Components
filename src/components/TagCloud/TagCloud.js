@@ -3,7 +3,7 @@ import './TagCloud.css';
 
 function TagCloud() {
     return (
-        <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+        <ul className="cloud" role="navigation" aria-label="Webdev word cloud">
             <li><a href="https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90" data-weight="4">HTTP</a></li>
             <li><a href="https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90" data-weight="1">Ember</a></li>
             <li><a href="https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90" data-weight="5">Sass</a></li>

@@ -3,6 +3,6 @@ import './MyFab.css';
 
 export default function MyFab() {
     return (
-        <div class="fab"> ← </div>
+        <div className="fab"> ← </div>
     )
 }

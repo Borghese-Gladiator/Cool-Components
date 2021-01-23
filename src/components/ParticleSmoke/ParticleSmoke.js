@@ -116,7 +116,7 @@ export default function ParticleSmoke() {
 
         });
         return (
-            <div class="smoke-container">
+            <div className="smoke-container">
 
                 <canvas id="canvas1"></canvas>
 
