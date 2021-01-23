@@ -10,11 +10,6 @@ const CreditCardPage = () => {
             <Link to="/">
                 <MyFab />
             </Link>
-            <h4>My Changes</h4>
-            <ul>
-                <li>Fixed attributes to camelCase (eg: class)</li>
-            </ul>
-            <br />
             <TagCloud />
         </Layout>
     )
