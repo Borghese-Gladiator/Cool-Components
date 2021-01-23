@@ -97,5 +97,5 @@ body {
   }
   @keyframes slide {
     from { margin-left: 0%; }
-    to { margin-left: calc(100% - var(--w, 600px)); }
+    to { margin-left: calc(100% - var(--w, 0px)); }
 }
