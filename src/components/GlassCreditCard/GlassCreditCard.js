@@ -8,7 +8,7 @@ function GlassCreditCard() {
                 <div className="card">
                     <div className="card__text">
                         8293 3412 5976 1254
-      <br />
+                        <br />
                         <small>12/24</small>
                     </div>
                     <svg width="70px" viewBox="0 0 1001 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
