@@ -1,17 +1,23 @@
 import React from 'react';
 import { Link } from "gatsby";
+import Layout from '../components/_layout/Layout';
 import MyFab from '../components/MyFab';
 import ParticleSmoke from '../components/ParticleSmoke';
   
-const CreditCardPage = () => {
+const ParticleSmokePage = () => {
     return (
-        <div>
+        <Layout>
             <Link to="/">
                 <MyFab />
             </Link>
+            <h4>My Changes</h4>
+            <ul>
+                <li>Fixed attributes to camelCase (eg: class)</li>
+            </ul>
+            <br />
             <ParticleSmoke />
-        </div>
+        </Layout>
     )
 };
 
-export default CreditCardPage;
+export default ParticleSmokePage;
